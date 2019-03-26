@@ -15,7 +15,6 @@ public class Form extends JFrame{
         setResizable(true);
         setVisible(true);
 
-        mainPanel main = new mainPanel();
 
     }
 
