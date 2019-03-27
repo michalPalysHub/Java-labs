@@ -2,24 +2,42 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import org.mariuszgromada.math.mxparser.*;
 
+public class Form extends JFrame {
+    private JPanel mainPanel;
+    private JScrollPane scrollContainerPane;
+    private JTextArea historyTextArea;
+    private JTextField formulaInput;
+    private JList functionsList;
+    private JButton evalButton;
 
-public class Form extends JFrame{
-
-    private Form(){
-        setTitle("SciCalculator");
+    private Form() {
         double height = Toolkit.getDefaultToolkit().getScreenSize().getHeight();
         double width = Toolkit.getDefaultToolkit().getScreenSize().getWidth();
-        setBounds( (int)width/4,(int)height/4, (int)width/2, (int)height/2);
-        initComponents();
-        setResizable(true);
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setBounds((int) width / 4, (int) height / 4, (int) width / 2, (int) height / 2);
+
+        createUIComponents();
+
+        this.setTitle("SciCalculator");
+        this.setResizable(true);
+        this.setVisible(true);
+        //pack();
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    private void initComponents(){
+    private void createUIComponents() {
 
+        mainPanel.setLayout(new GridBagLayout());
+        GridBagConstraints c = new GridBagConstraints();
+        c.gridx = 3;
+        c.gridy = 3;
+
+        evalButton = new JButton("Evaluate!");
+        mainPanel.add(evalButton, c);
+        this.add(mainPanel);
     }
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
