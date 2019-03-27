@@ -17,7 +17,7 @@ public class Form extends JFrame {
         double width = Toolkit.getDefaultToolkit().getScreenSize().getWidth();
         this.setBounds((int) width / 4, (int) height / 4, (int) width / 2, (int) height / 2);
 
-        createUIComponents();
+        initiateComponents();
 
         this.setTitle("SciCalculator");
         this.setResizable(true);
@@ -26,17 +26,12 @@ public class Form extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    private void createUIComponents() {
-
+    private void initiateComponents(){
+        mainPanel = new JPanel();
         mainPanel.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
-        c.gridx = 3;
-        c.gridy = 3;
-
-        evalButton = new JButton("Evaluate!");
-        mainPanel.add(evalButton, c);
-        this.add(mainPanel);
     }
+
 
 
     public static void main(String[] args) {

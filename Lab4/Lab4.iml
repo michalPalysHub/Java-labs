@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.mariuszgromada.math:MathParser.org-mXparser:4.3.3" level="project" />
+    <orderEntry type="library" name="cookxml-3.0.2" level="project" />
   </component>
 </module>
