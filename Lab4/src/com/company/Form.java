@@ -12,12 +12,12 @@ public class Form extends JFrame {
     private JScrollPane scrollContainerPane;
     private JTextArea historyTextArea;
     private JTextField formulaInput;
-    private JList functionsList;
+    private JList<listItem> functionsList;
     private JButton evalButton;
     private JMenuBar menuBar;
     private JMenu options;
-    private JMenuItem reset;
-    private JMenuItem exit;
+    private JMenuItem reset, exit;
+
 
     private Form() {
         this.setTitle("SciCalculator");
@@ -32,6 +32,7 @@ public class Form extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         createMenu();
+        createFunctionsList();
 
         this.setJMenuBar(menuBar);
         this.setContentPane(mainPanel);
@@ -40,7 +41,6 @@ public class Form extends JFrame {
 
     private void createMenu(){
 
-        // creating the menu
         menuBar = new JMenuBar();
         options = new JMenu("Options");
         reset = new JMenuItem("Reset");
@@ -61,11 +61,28 @@ public class Form extends JFrame {
             public void actionPerformed(ActionEvent e){
                 historyTextArea.setText(" ");
                 formulaInput.setText(" ");
-
             }
         });
     }
 
+    private void createFunctionsList(){
+        DefaultListModel<listItem> listModel = new DefaultListModel<>();
+
+        listModel.addElement(new listItem("sine", "sin()", true));
+        listModel.addElement(new listItem("cosine", "cos()", true));
+        listModel.addElement(new listItem("tangent", "tan()", true));
+        listModel.addElement(new listItem("cotangent", "ctan()", true));
+        listModel.addElement(new listItem("inverse sine", "arcsin()", true));
+        listModel.addElement(new listItem("Pi", "pi", false));
+        listModel.addElement(new listItem("Euler's nuber", "e", false));
+        listModel.addElement(new listItem("Plastic constant", "[PN]", false));
+        listModel.addElement(new listItem("add", "+", false));
+        listModel.addElement(new listItem("substract", "-", false));
+        listModel.addElement(new listItem("multiplicate", "*", false));
+        listModel.addElement(new listItem("Last result", "Last result", false));
+
+        functionsList.setModel(listModel);
+    }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
