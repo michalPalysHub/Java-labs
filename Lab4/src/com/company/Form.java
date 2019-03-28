@@ -2,10 +2,9 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import org.mariuszgromada.math.mxparser.*;
 
 public class Form extends JFrame {
-    private JPanel mainPanel, listPanel;
+    private JPanel mainPanel;
     private JScrollPane scrollContainerPane;
     private JTextArea historyTextArea;
     private JTextField formulaInput;
@@ -58,7 +57,7 @@ public class Form extends JFrame {
         mainPanel.add(evalButton, a);
 
         formulaInput = new JTextField();
-        b = new GridBagConstraints(0,1,1,1,0,0,GridBagConstraints.SOUTHWEST,0,new Insets(10,10,10,10), 500, 0);
+        b = new GridBagConstraints(0,1,1,1,0,0,GridBagConstraints.SOUTHWEST,0,new Insets(10,10,10,10), 0, 0);
         mainPanel.add(formulaInput, b);
 
         historyTextArea = new JTextArea();

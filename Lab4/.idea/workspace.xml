@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83f60395-8d76-4fb2-84a1-149ff42776ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/com/company/Form$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/com/company/Form$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab4/com/company/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/com/company/Form.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form.java" afterDir="false" />
     </list>
@@ -15,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Form.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="74" column="78" selection-start-line="74" selection-start-column="78" selection-end-line="74" selection-end-column="78" />
+            <state relative-caret-position="187">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2906#2907#0" expanded="true" />
@@ -27,6 +28,16 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab4.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Form.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -83,15 +94,15 @@
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/mainPanel.java" />
         <option value="$USER_HOME$/Downloads/cal/src/main/java/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Form.form" />
         <option value="$PROJECT_DIR$/src/com/company/Form.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Form.form" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1272" />
-    <option name="width" value="1297" />
-    <option name="height" value="1398" />
+    <option name="x" value="-10" />
+    <option name="width" value="1300" />
+    <option name="height" value="1400" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -120,6 +131,13 @@
             </path>
             <path>
               <item name="Lab4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Lab4" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -134,7 +152,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553720761574" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553802054994" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cookxml-3.0.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -273,14 +291,20 @@
       <option name="project" value="LOCAL" />
       <updated>1553720659170</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated version">
+      <created>1553800405072</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553800405073</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.53735924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12937063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -290,7 +314,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997987" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32997987" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32997987" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,7 +408,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Form.form" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Form.form" />
     <entry file="file://$USER_HOME$/Downloads/cal/src/main/java/Function.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -409,10 +432,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="74" column="78" selection-start-line="74" selection-start-column="78" selection-end-line="74" selection-end-column="78" />
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2906#2907#0" expanded="true" />
@@ -420,6 +450,12 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab4.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Form.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
