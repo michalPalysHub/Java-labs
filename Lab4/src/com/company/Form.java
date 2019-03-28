@@ -5,14 +5,16 @@ import java.awt.*;
 import org.mariuszgromada.math.mxparser.*;
 
 public class Form extends JFrame {
-    private JPanel mainPanel;
+    private JPanel mainPanel, listPanel;
     private JScrollPane scrollContainerPane;
     private JTextArea historyTextArea;
     private JTextField formulaInput;
     private JList functionsList;
     private JButton evalButton;
     private JMenuBar menuBar;
-    private GridBagConstraints c;
+    private JMenu menu;
+    private JMenuItem reset, exit;
+    private GridBagConstraints a, b, c, d;
 
     private Form() {
 
@@ -22,7 +24,7 @@ public class Form extends JFrame {
 
         initiateComponents();
 
-        add(mainPanel);
+        getContentPane().add(mainPanel);
         this.setTitle("SciCalculator");
         this.setResizable(true);
         this.setVisible(true);
@@ -32,54 +34,45 @@ public class Form extends JFrame {
 
     private void initiateComponents(){
         mainPanel = new JPanel();
-        c = new GridBagConstraints();
         mainPanel.setLayout(new GridBagLayout());
 
         Dimension size = getPreferredSize();
         size.width = (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2;
         size.height = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2;
-        setPreferredSize(size);
+        this.setPreferredSize(size);
 
-        // adding components to mainPanel
+        // adding components to mainPanel ////////////////
 
-        functionsList = new JList();
-        setConstraints(c, 1, 1,0, 0);
-        mainPanel.add(functionsList,c);
+        // setting menuBar
+        menuBar = new JMenuBar();
+        menu = new JMenu("Options");
+        reset = new JMenuItem("Reset");
+        exit = new JMenu("Exit");
+        menu.add(reset);
+        menu.add(exit);
+        menuBar.add(menu);
+        this.setJMenuBar(menuBar);
 
         evalButton = new JButton("Evaluate!");
-        setConstraints(c, 1, 2, 0, 0);
-        mainPanel.add(evalButton, c);
+        a = new GridBagConstraints(1,1,1,1,0,0,GridBagConstraints.SOUTHEAST,0,new Insets(10,10,10,10),0,0);
+        mainPanel.add(evalButton, a);
+
+        formulaInput = new JTextField();
+        b = new GridBagConstraints(0,1,1,1,0,0,GridBagConstraints.SOUTHWEST,0,new Insets(10,10,10,10), 500, 0);
+        mainPanel.add(formulaInput, b);
 
         historyTextArea = new JTextArea();
         historyTextArea.setEditable(false);
-
-        menuBar = new JMenuBar();
-        setConstraints(c, 0, 0, 0, 0);
-        c.gridwidth = 2;
-        c.fill = GridBagConstraints.VERTICAL;
-        c.fill = GridBagConstraints.HORIZONTAL;
-        mainPanel.add(menuBar, c);
-
-        formulaInput = new JTextField();
-        setConstraints(c, 0, 2, 10, 0);
-        mainPanel.add(formulaInput, c);
-
         scrollContainerPane = new JScrollPane();
         scrollContainerPane.add(historyTextArea);
-        setConstraints(c, 0, 1, 10, 10);
-        //c.ipady = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2;
+        c = new GridBagConstraints(0,0,1,1,0,0,GridBagConstraints.NORTHWEST,0,new Insets(10,10,10,10),0,0);
         mainPanel.add(scrollContainerPane, c);
+
+        functionsList = new JList();
+        d = new GridBagConstraints(1,0,1,1,0,0,GridBagConstraints.NORTHEAST,0,new Insets(10,10,10,10), 0, 0);
+        mainPanel.add(functionsList,d);
     }
 
-    private void setConstraints(GridBagConstraints c, int column, int row, double weightX, double weightY){
-        c.insets = new Insets(10,10,10,10);
-        c.gridx = column;
-        c.gridy = row;
-        c.gridheight = 1;
-        c.gridwidth = 1;
-        c.weightx = weightX;
-        c.weighty = weightY;
-    }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
