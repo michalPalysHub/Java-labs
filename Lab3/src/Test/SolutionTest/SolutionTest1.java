@@ -1,5 +1,8 @@
-package com.company.Solution;
+package Test.SolutionTest;
 
+import com.company.Solution.ElementOutOfRangeException;
+import com.company.Solution.SizeOutOfRangeException;
+import com.company.Solution.Solution;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +12,7 @@ import java.util.List;
 public class SolutionTest1 {
 
     @Test
-    public void ProperSolution(){
+    public void testProperSolution(){
         List<Integer> testList = new ArrayList<>();
         testList.add(-9);
         testList.add(9);
@@ -31,6 +34,5 @@ public class SolutionTest1 {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
-
     }
 }

@@ -14,6 +14,13 @@ import java.util.Random;
 
 public class Run {
 
+    public Run(){
+        runSolution();
+        runSubstring();
+        runAddToTarget();
+        runSortingRuntime();
+    }
+
     public static void runSolution(){
         // set sizeOfTheList, min and max values
         int min = -10;

@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4199a426-fb1b-497a-9385-51400c7a8754" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/company/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/company/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/company/Solution/SolutionTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddToTarget/NoSolutionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AddToTarget/NoSolutionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddToTarget/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AddToTarget/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Solution/ElementOutOfRangeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Solution/ElementOutOfRangeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Solution/SizeOutOfRangeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Solution/SizeOutOfRangeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Solution/SolutionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SortingRuntime/SortingRuntime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SortingRuntime/SortingRuntime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Substring/DifferentLettersException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Substring/DifferentLettersException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Substring/Substring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Substring/Substring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Solution/target/" />
@@ -32,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Solution/SolutionTest1.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Solution/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="255">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,28 +41,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Solution/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state>
+              <caret selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Run.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +106,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,14 +128,24 @@
         <option value="$PROJECT_DIR$/src/com/company/Solution/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/company/Substring/Substring.java" />
         <option value="$PROJECT_DIR$/src/com/company/AddToTarget/Solution.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Run.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Solution/SolutionTests.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Solution/SolutionTest1.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Solution/SolutionTest2.java" />
         <option value="$PROJECT_DIR$/Solution/src/main/java/company/Run.java" />
         <option value="$PROJECT_DIR$/Solution/src/main/java/company/Solution/SolutionTest1.java" />
         <option value="$PROJECT_DIR$/Solution/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/company/SortingRuntime/SortingRuntimeTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Solution/SolutionTest1.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Solution/SolutionTest2.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Solution/SolutionTest3.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Run.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest1.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest2.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest/SolutionTesrRunner.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestRunner.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest3.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestSuite.java" />
+        <option value="$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest4.java" />
       </list>
     </option>
   </component>
@@ -123,8 +159,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="2578" />
-    <option name="height" value="1408" />
+    <option name="width" value="1298" />
+    <option name="height" value="1399" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -150,6 +186,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Lab3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="SolutionTest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -163,12 +212,12 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554131608455" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554135636591" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -176,6 +225,7 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.company.Solution" />
+      <recent name="com.company.SortingRuntime" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -196,19 +246,98 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+  <component name="RunManager" selected="Application.SolutionTestRunner">
+    <configuration name="SolutionTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.SolutionTest.SolutionTestRunner" />
       <module name="Lab3" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.SolutionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionTest1.testProperSolution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.SolutionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test.SolutionTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.SolutionTest.SolutionTest1" />
+      <option name="METHOD_NAME" value="testProperSolution" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest2.testElementOutOfRangeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.SolutionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test.SolutionTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.SolutionTest.SolutionTest2" />
+      <option name="METHOD_NAME" value="testElementOutOfRangeException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest3.testElementOutOfRangeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.SolutionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test.SolutionTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.SolutionTest.SolutionTest3" />
+      <option name="METHOD_NAME" value="testElementOutOfRangeException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest4.testIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.SolutionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test.SolutionTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.SolutionTest.SolutionTest4" />
+      <option name="METHOD_NAME" value="testIllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.SolutionTest3.testElementOutOfRangeException" />
+      <item itemvalue="JUnit.SolutionTest2.testElementOutOfRangeException" />
+      <item itemvalue="JUnit.SolutionTest1.testProperSolution" />
+      <item itemvalue="Application.SolutionTestRunner" />
+      <item itemvalue="JUnit.SolutionTest4.testIllegalArgumentException" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SolutionTestRunner" />
+        <item itemvalue="JUnit.SolutionTest4.testIllegalArgumentException" />
+        <item itemvalue="JUnit.SolutionTest1.testProperSolution" />
+        <item itemvalue="JUnit.SolutionTest2.testElementOutOfRangeException" />
+        <item itemvalue="JUnit.SolutionTest3.testElementOutOfRangeException" />
       </list>
     </recent_temporary>
   </component>
@@ -384,8 +513,54 @@
       <option name="project" value="LOCAL" />
       <updated>1553173065837</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="updated version">
+      <created>1554131642007</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1554131642007</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated version">
+      <created>1554131657466</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1554131657466</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SolutionTestSuite - 2019.04.01 at 18h 02m 12s.xml">
+      <configuration name="SolutionTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTestSuite - 2019.04.01 at 18h 07m 23s.xml">
+      <configuration name="SolutionTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTestSuite - 2019.04.01 at 18h 08m 16s.xml">
+      <configuration name="SolutionTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest3_testElementOutOfRangeException - 2019.04.01 at 18h 10m 31s.xml">
+      <configuration name="SolutionTest3.testElementOutOfRangeException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest3_testElementOutOfRangeException - 2019.04.01 at 18h 12m 11s.xml">
+      <configuration name="SolutionTest3.testElementOutOfRangeException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest3_testElementOutOfRangeException - 2019.04.01 at 18h 12m 52s.xml">
+      <configuration name="SolutionTest3.testElementOutOfRangeException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest3_testElementOutOfRangeException - 2019.04.01 at 18h 13m 41s.xml">
+      <configuration name="SolutionTest3.testElementOutOfRangeException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest2_testElementOutOfRangeException - 2019.04.01 at 18h 13m 59s.xml">
+      <configuration name="SolutionTest2.testElementOutOfRangeException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest1_testProperSolution - 2019.04.01 at 18h 14m 10s.xml">
+      <configuration name="SolutionTest1.testProperSolution" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest1_testProperSolution - 2019.04.01 at 18h 15m 58s.xml">
+      <configuration name="SolutionTest1.testProperSolution" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,16 +637,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Matrix/Matrix.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/SortingRuntime/SortingRuntime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3264">
-          <caret line="192" column="48" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
-          <folding>
-            <element signature="method#printArray#0;class#SortingRuntime#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Substring/Substring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -487,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Solution/SizeOutOfRangeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Solution/src/main/java/company/Solution/SolutionTest2.java" />
     <entry file="file://$PROJECT_DIR$/Solution/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,17 +660,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/SortingRuntime/SortingRuntimeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/SortingRuntime/SortingRuntime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="192" column="48" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
+          <folding>
+            <element signature="method#printArray#0;class#SortingRuntime#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.1/junit-jupiter-api-5.4.1.jar!/org/junit/jupiter/api/function/Executable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTesrRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/builders/AllDefaultPossibilitiesBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Run.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="77">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#84#85#0" expanded="true" />
+            <element signature="e#108#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/builders/JUnit4Builder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Solution/SizeOutOfRangeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -521,15 +802,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Solution/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Solution/SolutionTest1.java">
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTest4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        <state relative-caret-position="272">
+          <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -588,7 +869,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Solution</last-edited>
+          <last-edited>Lab3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -605,7 +886,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.13908046" />
               </list>
             </option>
           </splitter-proportions>
