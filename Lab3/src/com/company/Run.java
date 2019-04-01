@@ -1,8 +1,12 @@
 package com.company;
 
-import com.company.Solution.*;
-import com.company.Substring.*;
-import com.company.SortingRuntime.*;
+import com.company.AddToTarget.NoSolutionException;
+import com.company.Solution.ElementOutOfRangeException;
+import com.company.Solution.SizeOutOfRangeException;
+import com.company.Solution.Solution;
+import com.company.SortingRuntime.SortingRuntime;
+import com.company.Substring.DifferentLettersException;
+import com.company.Substring.Substring;
 
 import java.util.List;
 import java.util.Random;
@@ -16,7 +20,7 @@ public class Run {
         int max = 10;
         int sizeOfTheList = 10;
         try {
-            List<Integer> list = new com.company.Solution.Solution().createRandomArrayList(min, max, sizeOfTheList);
+            List<Integer> list = new Solution().createRandomArrayList(min, max, sizeOfTheList);
             System.out.println("Solution: " + new Solution().solution(list));
         }
         catch (IllegalArgumentException | SizeOutOfRangeException | ElementOutOfRangeException e) {
@@ -44,7 +48,7 @@ public class Run {
         try {
             int[] res = new com.company.AddToTarget.Solution().solution(arr, target);
             System.out.println("\nAddToTarget: " + res[0] + ", " + res[1]);
-        } catch (com.company.AddToTarget.NoSolutionException e) {
+        } catch (NoSolutionException e) {
             System.out.println(e.getMessage());
         } catch (IllegalArgumentException e){
             System.out.println(e.getMessage());
