@@ -8,6 +8,8 @@ import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.text.MessageFormat;
 
 public class Form extends JFrame {
@@ -25,7 +27,7 @@ public class Form extends JFrame {
 
     private Form() {
         this.setTitle("SciCalculator");
-        Dimension size = getPreferredSize();
+        Dimension size = new Dimension();
         size.width = (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2;
         size.height = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2;
         this.setPreferredSize(size);
@@ -42,6 +44,19 @@ public class Form extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e){
                 evaluate();
+            }
+        });
+
+        formulaInput.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if (e.getKeyCode() == KeyEvent.VK_UP){
+                    formulaInput.setText(lastExpression);
+                }
+                else if (e.getKeyCode() == KeyEvent.VK_ENTER){
+                    evaluate();
+                }
             }
         });
 
@@ -69,8 +84,8 @@ public class Form extends JFrame {
         reset.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
-                historyTextArea.setText(" ");
-                formulaInput.setText(" ");
+                historyTextArea.setText("");
+                formulaInput.setText("");
                 lastExpression = null;
                 lastResult = null;
             }
@@ -109,7 +124,7 @@ public class Form extends JFrame {
             lastResult = Double.toString(result);
         } else {
             String errorMessage = expression.getErrorMessage();
-            JOptionPane.showMessageDialog(null, "Couldn't evaluate:\n" +  errorMessage, "Errror", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Couldn't evaluate:\n" +  errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
             formulaInput.setText(" ");
         }
     }
