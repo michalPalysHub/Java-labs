@@ -6,10 +6,10 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
-        SolutionTest1.class,
-        SolutionTest2.class,
-        SolutionTest3.class,
-        SolutionTest4.class,
+        Test_ExpectedValue.class,
+        Should_ThrowException_When_ListElementIsTooBig.class,
+        Should_ThrowException_When_ListHasTooManyElements.class,
+        Should_ThrowException_When_ListIsEmpty.class
 })
 
 public class SolutionTestSuite {

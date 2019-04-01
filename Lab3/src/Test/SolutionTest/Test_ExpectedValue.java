@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SolutionTest1 {
+public class Test_ExpectedValue {
 
     @Test
     public void testProperSolution(){

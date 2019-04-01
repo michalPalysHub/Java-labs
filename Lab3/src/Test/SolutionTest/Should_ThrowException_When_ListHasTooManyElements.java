@@ -8,13 +8,16 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class SolutionTest4 {
+public class Should_ThrowException_When_ListHasTooManyElements {
 
     @Test
-    public void testIllegalArgumentException(){
+    public void testElementOutOfRangeException(){
         List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 1000000; i++) {
+            list.add(1);
+        }
 
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, () -> {
+        SizeOutOfRangeException thrown = assertThrows(SizeOutOfRangeException.class, () -> {
             new Solution().solution(list);
         });
     }
