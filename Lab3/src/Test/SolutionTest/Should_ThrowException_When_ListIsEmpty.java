@@ -11,7 +11,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Should_ThrowException_When_ListIsEmpty {
-
     @Test
     public void testIllegalArgumentException(){
         List<Integer> list = new ArrayList<>();

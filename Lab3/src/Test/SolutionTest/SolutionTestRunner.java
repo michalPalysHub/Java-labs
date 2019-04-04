@@ -16,4 +16,4 @@ public class SolutionTestRunner {
     }
 }
 
-//w 5tym można sprawdzać, czy faktycznie czas optymistyczny jest szybszy niż realistyczny, czy tablice są wgl posortowane, Matrixa nie trzeba!!!!!
+//w 5tym można sprawdzać, czy faktycznie czas optymistyczny jest szybszy niż realistyczny, czy tablice są wgl posortowane

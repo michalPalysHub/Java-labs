@@ -8,7 +8,8 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         Should_ThrowException_If_DifferentLettersUsed.class,
         Should_ThrowException_If_EmptyString.class,
-        Test_ExpectedValue.class
+        Test_ExpectedValue.class,
+        Test_CompareTwoStrings.class
 })
 
 public class SubstringTestSuite {
