@@ -1,22 +1,21 @@
-package Test.SubstringTest;
+package Test.AddToTargetTest;
 
-import com.company.Substring.*;
+import com.company.AddToTarget.Solution;
 import org.junit.Test;
 import org.junit.jupiter.api.function.Executable;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class Should_ThrowException_If_EmptyString {
+public class Should_ThrowException_If_EmptyArray {
 
     @Test
-    public void testCheckLettersUsedInString() {
-
-        String string = "something";
-        String string2 = "";
+    public void testIfNoSolution(){
+        float[] arr = {};
+        float target = 6.0f;
 
         IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, new Executable() {
             @Override
             public void execute() throws Throwable {
-                new Substring().substring(string, string2);
+                new Solution().solution(arr, target);
             }
         });
     }
