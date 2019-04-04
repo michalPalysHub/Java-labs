@@ -15,3 +15,5 @@ public class SolutionTestRunner {
         System.out.println(result.wasSuccessful());
     }
 }
+
+//w 5tym można sprawdzać, czy faktycznie czas optymistyczny jest szybszy niż realistyczny, czy tablice są wgl posortowane, Matrixa nie trzeba!!!!!

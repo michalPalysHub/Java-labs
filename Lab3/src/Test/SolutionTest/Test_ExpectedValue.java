@@ -4,7 +4,7 @@ import com.company.Solution.ElementOutOfRangeException;
 import com.company.Solution.SizeOutOfRangeException;
 import com.company.Solution.Solution;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
