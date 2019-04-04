@@ -134,7 +134,7 @@ public class Form extends JFrame {
         public void valueChanged(ListSelectionEvent e){
             if (e.getValueIsAdjusting()){
                 listItem item = functionsList.getSelectedValue();
-                if (item.getName() == "Last result"){
+                if (item.getName().equals("Last result")){
                     formulaInput.setText(formulaInput.getText() + lastResult);
                 }
                 else {
