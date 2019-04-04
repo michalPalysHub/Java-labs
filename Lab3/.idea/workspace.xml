@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4199a426-fb1b-497a-9385-51400c7a8754" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Test/AddToTargetTest/AddToTargerTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/AddToTargetTest/AddToTargetTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_EmptyString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/SubstringTest/SubstringTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/SubstringTest/Test_ExpectedValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,7 +21,7 @@
     <SUITE FILE_PATH="coverage/Lab3$SolutionTestSuite.ic" NAME="SolutionTestSuite Coverage Results" MODIFIED="1554389856170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Test.SolutionTest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Lab3$SubstringTestRunner.ic" NAME="SubstringTestRunner Coverage Results" MODIFIED="1554390710563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Lab3$SubstringTestRunner.ic" NAME="SubstringTestRunner Coverage Results" MODIFIED="1554393206744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Test.SubstringTest.*</FILTER>
     </SUITE>
   </component>
@@ -28,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,10 +43,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Run.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/SubstringTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="170">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,47 +55,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/AddToTargetTest/AddToTargerTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding>
-                <element signature="e#84#85#0" expanded="true" />
-                <element signature="e#109#110#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestSuite.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/AddToTargetTest/AddToTargetTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/Should_ThrowException_When_ListHasTooManyElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/SubstringTestRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,34 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_EmptyString.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/AddToTargetTest/Test_ExpectedValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Substring/Substring.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_DifferentLettersUsed.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -182,10 +135,12 @@
         <option value="$PROJECT_DIR$/src/Test/SolutionTest/Test_ExpectedValue.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/Test/SolutionTest/Should_ThrowException_When_ListIsEmpty.java" />
-        <option value="$PROJECT_DIR$/src/Test/SubstringTest/SubstringTestSuite.java" />
         <option value="$PROJECT_DIR$/src/Test/SolutionTest/Should_ThrowException_When_ListHasTooManyElements.java" />
         <option value="$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_DifferentLettersUsed.java" />
         <option value="$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_EmptyString.java" />
+        <option value="$PROJECT_DIR$/src/Test/SubstringTest/Test_ExpectedValue.java" />
+        <option value="$PROJECT_DIR$/src/Test/SubstringTest/SubstringTestSuite.java" />
+        <option value="$PROJECT_DIR$/src/Test/AddToTargetTest/AddToTargetTestRunner.java" />
       </list>
     </option>
   </component>
@@ -245,7 +200,7 @@
               <item name="Lab3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
-              <item name="SolutionTest" type="462c0819:PsiDirectoryNode" />
+              <item name="AddToTargetTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lab3" type="b2602c69:ProjectViewProjectNode" />
@@ -266,7 +221,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554392796955" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554393581796" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -300,7 +255,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Should_ThrowException_If_EmptyString.testCheckLettersUsedInString">
+  <component name="RunManager" selected="Application.AddToTargetTestRunner">
+    <configuration name="AddToTargetTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.AddToTargetTest.AddToTargetTestRunner" />
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.AddToTargetTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SubstringTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test.SubstringTest.SubstringTestRunner" />
       <module name="Lab3" />
@@ -329,22 +297,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Should_ThrowException_If_DifferentLettersUsed.testCheckLettersUsedInString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.SubstringTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test.SubstringTest" />
-      <option name="MAIN_CLASS_NAME" value="Test.SubstringTest.Should_ThrowException_If_DifferentLettersUsed" />
-      <option name="METHOD_NAME" value="testCheckLettersUsedInString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Should_ThrowException_If_EmptyString.testCheckLettersUsedInString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab3" />
       <extension name="coverage">
@@ -361,36 +313,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Should_ThrowException_When_ListHasTooManyElements.testElementOutOfRangeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_ExpectedValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Test.SolutionTest.*" />
+          <option name="PATTERN" value="Test.SubstringTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Test.SolutionTest" />
-      <option name="MAIN_CLASS_NAME" value="Test.SolutionTest.Should_ThrowException_When_ListHasTooManyElements" />
-      <option name="METHOD_NAME" value="testElementOutOfRangeException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="Test.SubstringTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.SubstringTest.Test_ExpectedValue" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Should_ThrowException_When_ListHasTooManyElements.testElementOutOfRangeException" />
-      <item itemvalue="JUnit.Should_ThrowException_If_DifferentLettersUsed.testCheckLettersUsedInString" />
       <item itemvalue="JUnit.Should_ThrowException_If_DifferentLettersUsed" />
       <item itemvalue="Application.SubstringTestRunner" />
       <item itemvalue="JUnit.Should_ThrowException_If_EmptyString.testCheckLettersUsedInString" />
+      <item itemvalue="JUnit.Test_ExpectedValue" />
+      <item itemvalue="Application.AddToTargetTestRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Should_ThrowException_If_EmptyString.testCheckLettersUsedInString" />
+        <item itemvalue="Application.AddToTargetTestRunner" />
         <item itemvalue="Application.SubstringTestRunner" />
+        <item itemvalue="JUnit.Test_ExpectedValue" />
+        <item itemvalue="JUnit.Should_ThrowException_If_EmptyString.testCheckLettersUsedInString" />
         <item itemvalue="JUnit.Should_ThrowException_If_DifferentLettersUsed" />
-        <item itemvalue="JUnit.Should_ThrowException_If_DifferentLettersUsed.testCheckLettersUsedInString" />
-        <item itemvalue="JUnit.Should_ThrowException_When_ListHasTooManyElements.testElementOutOfRangeException" />
       </list>
     </recent_temporary>
   </component>
@@ -650,39 +601,46 @@
       <option name="project" value="LOCAL" />
       <updated>1554392566328</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="updated version">
+      <created>1554392807674</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1554392807674</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SolutionTestSuite - 2019.04.02 at 08h 05m 54s.xml">
-      <configuration name="SolutionTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTestSuite - 2019.04.02 at 08h 06m 59s.xml">
-      <configuration name="SolutionTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTestSuite - 2019.04.04 at 16h 19m 57s.xml">
-      <configuration name="SolutionTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTestSuite - 2019.04.04 at 16h 20m 48s.xml">
-      <configuration name="SolutionTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTestSuite - 2019.04.04 at 16h 57m 30s.xml">
-      <configuration name="SolutionTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTestSuite - 2019.04.04 at 16h 57m 57s.xml">
-      <configuration name="SolutionTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Should_ThrowException_When_ListHasTooManyElements - 2019.04.04 at 17h 39m 15s.xml">
-      <configuration name="Should_ThrowException_When_ListHasTooManyElements" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Should_ThrowException_When_ListHasTooManyElements - 2019.04.04 at 17h 39m 34s.xml">
-      <configuration name="Should_ThrowException_When_ListHasTooManyElements" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Should_ThrowException_When_ListHasTooManyElements_testElementOutOfRangeException - 2019.04.04 at 17h 39m 51s.xml">
       <configuration name="Should_ThrowException_When_ListHasTooManyElements.testElementOutOfRangeException" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Should_ThrowException_If_DifferentLettersUsed - 2019.04.04 at 17h 41m 27s.xml">
       <configuration name="Should_ThrowException_If_DifferentLettersUsed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Should_ThrowException_If_EmptyString_testCheckLettersUsedInString - 2019.04.04 at 17h 45m 34s.xml">
+      <configuration name="Should_ThrowException_If_EmptyString.testCheckLettersUsedInString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Should_ThrowException_If_EmptyString_testCheckLettersUsedInString - 2019.04.04 at 17h 46m 00s.xml">
+      <configuration name="Should_ThrowException_If_EmptyString.testCheckLettersUsedInString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Should_ThrowException_If_EmptyString_testCheckLettersUsedInString - 2019.04.04 at 17h 46m 41s.xml">
+      <configuration name="Should_ThrowException_If_EmptyString.testCheckLettersUsedInString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_ExpectedValue - 2019.04.04 at 17h 51m 19s.xml">
+      <configuration name="Test_ExpectedValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_ExpectedValue - 2019.04.04 at 17h 51m 30s.xml">
+      <configuration name="Test_ExpectedValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_ExpectedValue - 2019.04.04 at 17h 51m 39s.xml">
+      <configuration name="Test_ExpectedValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_ExpectedValue - 2019.04.04 at 17h 52m 14s.xml">
+      <configuration name="Test_ExpectedValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_ExpectedValue - 2019.04.04 at 17h 52m 26s.xml">
+      <configuration name="Test_ExpectedValue" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -867,26 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/Test_ExpectedValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/SubstringTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/Should_ThrowException_When_ListIsEmpty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -897,10 +835,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestRunner.java">
+    <entry file="file://$PROJECT_DIR$/../Lab4/Lab4.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/Should_ThrowException_When_ListHasTooManyElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -917,23 +858,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/Should_ThrowException_When_ListHasTooManyElements.java">
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/Test_ExpectedValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="457">
+          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Lab4/Lab4.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/Test_ExpectedValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_DifferentLettersUsed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -942,8 +890,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Substring/Substring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
+        <state relative-caret-position="34">
           <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_EmptyString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -957,13 +915,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/Should_ThrowException_If_EmptyString.java">
+    <entry file="file://$PROJECT_DIR$/src/Test/SubstringTest/SubstringTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/AddToTargetTest/AddToTargerTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/SolutionTest/SolutionTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/AddToTargetTest/AddToTargetTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/AddToTargetTest/Test_ExpectedValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
