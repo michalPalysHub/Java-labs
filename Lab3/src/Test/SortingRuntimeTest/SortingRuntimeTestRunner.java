@@ -1,12 +1,12 @@
-package Test.SubstringTest;
+package Test.SortingRuntimeTest;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-public class SubstringTestRunner {
-    public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(SubstringTestSuite.class);
+public class SortingRuntimeTestRunner {
+    public static void main(String argv[]){
+        Result result = JUnitCore.runClasses(SortingRuntimeTestSuite.class);
 
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
