@@ -14,6 +14,10 @@ public class Task {
     private final StringProperty priority; // TODO: change this to "EnumProperty" or sth like that
     private final StringProperty taskText;
 
+    public Task(){
+        this(null);
+    }
+
     public Task(String title){
         this.title = new SimpleStringProperty(title);
         // TODO: change expDate to show actual date by default

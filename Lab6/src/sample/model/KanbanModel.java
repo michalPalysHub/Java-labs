@@ -30,4 +30,5 @@ public class KanbanModel {
     public ObservableList<Task> getDoneData(){
         return doneData;
     }
+
 }
