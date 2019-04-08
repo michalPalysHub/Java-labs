@@ -1,77 +1,33 @@
 package sample.model;
 
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-
-import java.time.LocalDate;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class KanbanModel {
-
-    private final StringProperty title;
-    private final ObjectProperty<LocalDate> expDate;
-    private final StringProperty priority; // TODO: change this to "EnumProperty" or sth like that
-    private final StringProperty taskText;
+    private ObservableList<Task> toDoData = FXCollections.observableArrayList();
+    private ObservableList<Task> inProgressData = FXCollections.observableArrayList();
+    private ObservableList<Task> doneData = FXCollections.observableArrayList();
 
     public KanbanModel(){
-        this.title = new SimpleStringProperty("");
-        // TODO: change expDate to show actual date by default
-        this.expDate = new SimpleObjectProperty<LocalDate>(LocalDate.of(2019, 4, 8));
-        this.priority = new SimpleStringProperty("Low");
-        this.taskText = new SimpleStringProperty("");
+        toDoData.add(new Task("Item 1"));
+        toDoData.add(new Task("Item 2"));
+
+        inProgressData.add(new Task("Item 1"));
+        inProgressData.add(new Task("Item 2"));
+
+        doneData.add(new Task("Item 1"));
+        doneData.add(new Task("Item 2"));
     }
 
-    // methods for title
-    public String getTitle(){
-        return title.get();
+    public ObservableList<Task> getToDoData(){
+        return toDoData;
     }
 
-    public StringProperty titleProperty() {
-        return title;
+    public ObservableList<Task> getInProgressData(){
+        return inProgressData;
     }
 
-    public void setTitle(String title){
-        this.title.set(title);
+    public ObservableList<Task> getDoneData(){
+        return doneData;
     }
-
-    // methods for expDate
-    public LocalDate getExpDate(){
-        return expDate.get();
-    }
-
-    public ObjectProperty<LocalDate> expDateProperty(){
-        return expDate;
-    }
-
-    public void setExpDate(LocalDate expDate){
-        this.expDate.set(expDate);
-    }
-
-    // methods for priority
-    public String getPriority() {
-        return priority.get();
-    }
-
-    public StringProperty priorityProperty() {
-        return priority;
-    }
-
-    public void setPriority(String priority) {
-        this.priority.set(priority);
-    }
-
-    // methods for taskText
-    public String getTaskText() {
-        return taskText.get();
-    }
-
-    public StringProperty taskTextProperty() {
-        return taskText;
-    }
-
-    public void setTaskText(String taskText) {
-        this.taskText.set(taskText);
-    }
-
 }
