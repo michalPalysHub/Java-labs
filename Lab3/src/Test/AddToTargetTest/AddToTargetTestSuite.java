@@ -11,5 +11,5 @@ import org.junit.runners.Suite;
         Should_ThrowException_If_EmptyArray.class
 })
 
-public class AddToTargerTestSuite {
+public class AddToTargetTestSuite {
 }
