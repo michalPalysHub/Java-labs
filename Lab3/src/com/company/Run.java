@@ -63,13 +63,7 @@ public class Run {
     }
 
     public static void runSortingRuntime(){
-        Random r = new Random();
-        int arr[] = new int[20000];
-        int bound = 10000;
-
-        for (int i = 0; i < arr.length; i++){
-            arr[i] = r.nextInt(bound);
-        }
+        int arr[] = new SortingRuntime().makeArr(20000,1000);
 
         System.out.println("\nRealistic sorting runtime:");
         System.out.println("bubble sort: " + new SortingRuntime().sortingRuntime(arr, "bubbleSort") + "s");

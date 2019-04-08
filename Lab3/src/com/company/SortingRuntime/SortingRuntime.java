@@ -1,5 +1,7 @@
 package com.company.SortingRuntime;
 
+import java.util.Random;
+
 public class SortingRuntime {
 
     public void bubbleSort(int arr[])
@@ -192,6 +194,17 @@ public class SortingRuntime {
         long tDelta = tEnd - tStart;
         double elapsedSeconds = tDelta / 1000.0;
         return elapsedSeconds;
+    }
+
+    public int[] makeArr(int length, int bound){
+        Random r = new Random();
+        int arr[] = new int[length];
+
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = r.nextInt(bound);
+        }
+
+        return arr;
     }
 
     void printArray(int arr[])
