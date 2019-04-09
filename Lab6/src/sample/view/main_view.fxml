@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -71,6 +72,20 @@
                      <center>
                         <Button mnemonicParsing="false" onAction="#handleNewTask" prefWidth="200.0" text="Add new task" BorderPane.alignment="CENTER" />
                      </center>
+                     <right>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <buttons>
+                            <Button mnemonicParsing="false" onAction="#handleLeftButton" text="&lt;" />
+                              <Button mnemonicParsing="false" onAction="#handleRightButton" text="&gt;" />
+                          </buttons>
+                           <BorderPane.margin>
+                              <Insets right="10.0" />
+                           </BorderPane.margin>
+                        </ButtonBar>
+                     </right>
+                     <left>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </left>
                   </BorderPane>
                </children>
             </AnchorPane>
