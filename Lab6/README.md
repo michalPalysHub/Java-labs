@@ -1,3 +1,3 @@
-#Lab 6
+# Java-lab-6
 
 Kanban model application made using JavaFX
