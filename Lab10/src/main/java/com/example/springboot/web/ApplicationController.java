@@ -44,9 +44,8 @@ public class ApplicationController {
             BufferedImage image = Image.getImages().get(id);
             ByteArrayOutputStream output = new ByteArrayOutputStream();
             ImageIO.write(image, "jpg", output);
-            byte[] imageAsByteArray = output.toByteArray();
 
-            return new ResponseEntity<>(imageAsByteArray, HttpStatus.OK);
+            return new ResponseEntity<>(output.toByteArray(), HttpStatus.OK);
         }
     }
 
@@ -60,12 +59,15 @@ public class ApplicationController {
         }
     }
 
-    @RequestMapping(value="/image/{id}/scale/{percent}", method=RequestMethod.GET)
-    public ResponseEntity scaleImage(@PathVariable("id") String id, @PathVariable("percent") double percent){
+    @RequestMapping(value="/image/{id}/scale/{percent}", method=RequestMethod.GET, produces=MediaType.IMAGE_JPEG_VALUE)
+    public ResponseEntity<byte[]> scaleImage(@PathVariable("id") String id, @PathVariable("percent") double percent) throws Exception{
         if (!Image.getImages().containsKey(id)) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } else {
-            return null;
+            BufferedImage image = Image.scaleImage(id, percent);
+            ByteArrayOutputStream output = new ByteArrayOutputStream();
+            ImageIO.write(image, "jpg", output);
+            return new ResponseEntity<>(output.toByteArray(), HttpStatus.OK);
         }
     }
 
