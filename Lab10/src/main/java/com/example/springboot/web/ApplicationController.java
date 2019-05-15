@@ -3,6 +3,8 @@ package com.example.springboot.web;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
@@ -43,14 +45,30 @@ public class ApplicationController {
 
     @RequestMapping(value="/image/{id}", method=RequestMethod.DELETE)
     public ResponseEntity removeImage(@PathVariable("id") String id){
-        if (!images.containsKey(id))
-        {
+        if (!images.containsKey(id)) {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
-        }
-        else
-        {
+        } else {
             deleteImage(id);
             return new ResponseEntity(HttpStatus.OK);
+        }
+    }
+
+    @RequestMapping(value="/image/{id}/size", method=RequestMethod.GET)
+    public String getSize(@PathVariable("id") String id){
+        if (!images.containsKey(id)) {
+            return "{\n\t\"error\": 404 NOT_FOUND\n}";
+        } else {
+            BufferedImage image = images.get(id);
+            return String.format("{\n\theight: %d, \n\twidth: %d\n}", image.getHeight(), image.getWidth());
+        }
+    }
+
+    @RequestMapping(value="/image/{id}/histogram", method=RequestMethod.GET)
+    public String getHistogram(@PathVariable("id") String id){
+        if (!images.containsKey(id)) {
+            return "{\n\t\"error\": 404 NOT_FOUND\n}";
+        } else {
+            return new Histogram().get(images.get(id));
         }
     }
 }
