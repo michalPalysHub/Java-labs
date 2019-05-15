@@ -1,10 +1,8 @@
 package com.example.springboot.web;
 
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
@@ -31,12 +29,28 @@ public class ApplicationController {
         return id;
     }
 
+    public void deleteImage(String id){
+        images.remove(id);
+    }
+
     @RequestMapping(value="/image", method=RequestMethod.POST)
     public String uploadImage(@RequestParam("file") MultipartFile file) throws Exception{
         InputStream input = new ByteArrayInputStream(file.getBytes());
         BufferedImage image = ImageIO.read(input);
         String id = addImage(image);
-        return String.format("{\n\tid: %s,\n\theight: %d, \n\twidth: %d}", id, image.getHeight(), image.getWidth());
+        return String.format("{\n\tid: %s,\n\theight: %d, \n\twidth: %d\n}", id, image.getHeight(), image.getWidth());
     }
 
+    @RequestMapping(value="/image/{id}", method=RequestMethod.DELETE)
+    public ResponseEntity removeImage(@PathVariable("id") String id){
+        if (!images.containsKey(id))
+        {
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        }
+        else
+        {
+            deleteImage(id);
+            return new ResponseEntity(HttpStatus.OK);
+        }
+    }
 }
