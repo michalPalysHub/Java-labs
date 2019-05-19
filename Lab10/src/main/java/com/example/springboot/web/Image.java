@@ -41,4 +41,11 @@ public class Image {
 
         return scaledImage;
     }
+
+    public static BufferedImage cropImage(String id, int x, int y, int width, int height){
+        if (x < 0 || y < 0 || width < 0 || height < 0){
+            throw new IllegalArgumentException("Values of the parameters must be bigger than 0!");
+        }
+        return getImages().get(id).getSubimage(x, y, width, height);
+    }
 }

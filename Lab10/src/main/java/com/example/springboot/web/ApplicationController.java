@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
+import javax.print.attribute.standard.Media;
 
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -78,5 +79,28 @@ public class ApplicationController {
         } else {
             return new ResponseEntity<>(new Histogram().get(Image.getImages().get(id)), HttpStatus.OK);
         }
+    }
+
+    @RequestMapping(value="/image/{id}/crop/{start}/{stop}/{width}/{height}", produces = MediaType.IMAGE_JPEG_VALUE)
+    public ResponseEntity<byte[]> cropImage(
+            @PathVariable("id") String id,
+            @PathVariable("start") int start,
+            @PathVariable("stop") int stop,
+            @PathVariable("width") int width,
+            @PathVariable("height") int height
+    ) throws Exception {
+        if (!Image.getImages().containsKey(id)) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } else {
+            BufferedImage croppedImage = Image.cropImage(id, start, stop, width, height);
+            ByteArrayOutputStream output = new ByteArrayOutputStream();
+            ImageIO.write(croppedImage, "jpg", output);
+            return new ResponseEntity<>(output.toByteArray(), HttpStatus.OK);
+        }
+    }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<String> handleError(IllegalArgumentException e){
+        return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }
