@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
-import javax.print.attribute.standard.Media;
 
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -16,8 +15,13 @@ import java.io.*;
 @RestController
 public class ApplicationController {
 
-    // http://localhost:8181/image
+    // http://localhost:8181/images
 
+    public byte[] processBufferedImageIntoByteArray(BufferedImage image) throws Exception{
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        ImageIO.write(image, "jpg", output);
+        return output.toByteArray();
+    }
 
     @RequestMapping(value="/image", method=RequestMethod.POST)
     public String uploadImage(@RequestParam("file") MultipartFile file) throws Exception{
@@ -42,11 +46,7 @@ public class ApplicationController {
         if (!Image.getImages().containsKey(id)) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } else {
-            BufferedImage image = Image.getImages().get(id);
-            ByteArrayOutputStream output = new ByteArrayOutputStream();
-            ImageIO.write(image, "jpg", output);
-
-            return new ResponseEntity<>(output.toByteArray(), HttpStatus.OK);
+            return new ResponseEntity<>(processBufferedImageIntoByteArray(Image.getImages().get(id)), HttpStatus.OK);
         }
     }
 
@@ -61,14 +61,12 @@ public class ApplicationController {
     }
 
     @RequestMapping(value="/image/{id}/scale/{percent}", method=RequestMethod.GET, produces=MediaType.IMAGE_JPEG_VALUE)
-    public ResponseEntity<byte[]> scaleImage(@PathVariable("id") String id, @PathVariable("percent") double percent) throws Exception{
+    public ResponseEntity<byte[]> printScaledImage(@PathVariable("id") String id, @PathVariable("percent") double percent) throws Exception{
         if (!Image.getImages().containsKey(id)) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } else {
             BufferedImage image = Image.scaleImage(id, percent);
-            ByteArrayOutputStream output = new ByteArrayOutputStream();
-            ImageIO.write(image, "jpg", output);
-            return new ResponseEntity<>(output.toByteArray(), HttpStatus.OK);
+            return new ResponseEntity<>(processBufferedImageIntoByteArray(image), HttpStatus.OK);
         }
     }
 
@@ -82,7 +80,7 @@ public class ApplicationController {
     }
 
     @RequestMapping(value="/image/{id}/crop/{start}/{stop}/{width}/{height}", produces = MediaType.IMAGE_JPEG_VALUE)
-    public ResponseEntity<byte[]> cropImage(
+    public ResponseEntity<byte[]> printCroppedImage(
             @PathVariable("id") String id,
             @PathVariable("start") int start,
             @PathVariable("stop") int stop,
@@ -93,9 +91,26 @@ public class ApplicationController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } else {
             BufferedImage croppedImage = Image.cropImage(id, start, stop, width, height);
-            ByteArrayOutputStream output = new ByteArrayOutputStream();
-            ImageIO.write(croppedImage, "jpg", output);
-            return new ResponseEntity<>(output.toByteArray(), HttpStatus.OK);
+            return new ResponseEntity<>(processBufferedImageIntoByteArray(croppedImage), HttpStatus.OK);
+        }
+    }
+
+    @RequestMapping(value="/image/{id}/greyscale", produces = MediaType.IMAGE_JPEG_VALUE)
+    public ResponseEntity<byte[]> printGreyScaledImage(@PathVariable("id") String id) throws Exception{
+        if (!Image.getImages().containsKey(id)) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } else {
+            return new ResponseEntity<>(processBufferedImageIntoByteArray(Image.greyScale(id)), HttpStatus.OK);
+        }
+    }
+
+    @RequestMapping(value="/image/{id}/blur/{radius}", produces = MediaType.IMAGE_JPEG_VALUE)
+    public ResponseEntity<byte[]> printBlurredImage(@PathVariable("id") String id, @PathVariable("radius") double radius) throws Exception{
+        if (!Image.getImages().containsKey(id)) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } else {
+            BufferedImage blurredImage = Image.gaussianBlur(id, radius);
+            return new ResponseEntity<>(processBufferedImageIntoByteArray(blurredImage), HttpStatus.OK);
         }
     }
 

@@ -1,8 +1,9 @@
 package com.example.springboot.web;
 
+import javax.swing.*;
+import java.awt.*;
 import java.awt.geom.AffineTransform;
-import java.awt.image.AffineTransformOp;
-import java.awt.image.BufferedImage;
+import java.awt.image.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
@@ -30,6 +31,8 @@ public class Image {
     }
 
     public static BufferedImage scaleImage(String id, double percent){
+        if (percent < 0) throw new IllegalArgumentException("Percent number must be positive!");
+
         BufferedImage image = getImages().get(id);
         double scaledWidth = image.getWidth() * percent / 100;
         double scaledHeight = image.getHeight() * percent / 100;
@@ -47,5 +50,19 @@ public class Image {
             throw new IllegalArgumentException("Values of the parameters must be bigger than 0!");
         }
         return getImages().get(id).getSubimage(x, y, width, height);
+    }
+
+    public static BufferedImage greyScale(String id){
+        BufferedImage colorImage = getImages().get(id);
+        BufferedImage greyScaleImage = new BufferedImage(colorImage.getWidth(), colorImage.getHeight(),BufferedImage.TYPE_BYTE_GRAY);
+        Graphics g = greyScaleImage.getGraphics();
+        g.drawImage(colorImage, 0, 0, null);
+        g.dispose();
+
+        return greyScaleImage;
+    }
+
+    public static BufferedImage gaussianBlur(String id, double radius){
+        return null;
     }
 }
