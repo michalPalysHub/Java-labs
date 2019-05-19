@@ -105,7 +105,7 @@ public class ApplicationController {
     }
 
     @RequestMapping(value="/image/{id}/blur/{radius}", produces = MediaType.IMAGE_JPEG_VALUE)
-    public ResponseEntity<byte[]> printBlurredImage(@PathVariable("id") String id, @PathVariable("radius") double radius) throws Exception{
+    public ResponseEntity<byte[]> printBlurredImage(@PathVariable("id") String id, @PathVariable("radius") int radius) throws Exception{
         if (!Image.getImages().containsKey(id)) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } else {

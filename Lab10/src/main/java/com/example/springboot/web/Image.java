@@ -1,6 +1,5 @@
 package com.example.springboot.web;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.*;
@@ -62,7 +61,19 @@ public class Image {
         return greyScaleImage;
     }
 
-    public static BufferedImage gaussianBlur(String id, double radius){
-        return null;
+    public static BufferedImage gaussianBlur(String id, int radius){
+        if (radius < 0 || radius > 100) throw new IllegalArgumentException("Radius must be in <0, 100>");
+
+        BufferedImage image = getImages().get(id);
+        float frac = 1.0f / (radius * radius);
+        float[] convulsionKernel = new float[radius * radius];
+
+        for (int i = 0; i < convulsionKernel.length; i++) {
+            convulsionKernel[i] = frac;
+        }
+
+        ConvolveOp op = new ConvolveOp(new Kernel(radius, radius, convulsionKernel), ConvolveOp.EDGE_NO_OP, null);
+
+        return op.filter(image, null);
     }
 }
