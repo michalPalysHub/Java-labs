@@ -33,13 +33,23 @@ public class Image {
         if (percent < 0) throw new IllegalArgumentException("Percent number must be positive!");
 
         BufferedImage image = getImages().get(id);
-        double scaledWidth = image.getWidth() * percent / 100;
-        double scaledHeight = image.getHeight() * percent / 100;
+        int scaledWidth = (int) (image.getWidth() * percent / 100);
+        int scaledHeight = (int) (image.getHeight() * percent / 100);
 
-        BufferedImage scaledImage = new BufferedImage((int) scaledWidth, (int) scaledHeight, BufferedImage.TYPE_INT_ARGB);
+        BufferedImage scaledImage = new BufferedImage(scaledWidth, scaledHeight, BufferedImage.TYPE_INT_ARGB);
+
+        /*
         AffineTransform at = new AffineTransform(getScaleInstance(percent/100, (percent/100)));
         AffineTransformOp ato = new AffineTransformOp(at, AffineTransformOp.TYPE_BICUBIC);
         scaledImage = ato.filter(image, scaledImage);
+        */
+
+
+        Graphics2D g = scaledImage.createGraphics();
+        g.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
+                RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+        g.drawImage(image, 0, 0, scaledWidth, scaledHeight, 0, 0, image.getWidth(), image.getHeight(), null);
+        g.dispose();
 
         return scaledImage;
     }
